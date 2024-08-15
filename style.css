@@ -1,0 +1,274 @@
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
+.header{
+    background-image: url(./img/index-background-desktop.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 45% 100%;
+    text-transform: uppercase;
+    
+    padding-bottom: 150px;
+
+    @media (max-width:1200px) {
+        background-image: none;
+        
+    }
+
+    .mobile{
+        padding-top: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px 15px;
+        display: none;
+
+        img{
+            max-height: 37px;
+            height: 100%;
+        }
+
+        @media (max-width:725px) {
+            display: block;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+
+    .nav{
+        padding-top: 35px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media (max-width:725px) {
+            display: none;
+        }
+
+        .menu{
+            display: flex;
+            gap: 35px;
+
+            a{
+                text-decoration: none;
+                color: white;
+
+                &:hover{
+                    border-bottom: 1px solid white;
+
+                    @media (max-width:1200px) {
+                        border-bottom:1px solid #68B738;
+                        
+                    }
+                }
+
+                @media (max-width:1200px) {
+                    color: black;
+                }
+            }
+        }
+    }
+
+    .wrap{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 35px;
+        flex-wrap: wrap;
+
+        @media (max-width:725px) {
+            background-image: url(img/index-background-desktop.png);
+            background-position: top;
+            background-repeat: no-repeat;
+            background-size: 100% 75%;
+            color: white;
+            text-align: center;
+            
+        }
+
+        img{
+            max-width: 709px;
+            width: 100%;
+        }
+
+        h1{
+            font-size: 60px;
+
+            @media (max-width:725px) {
+                font-size: 36px;
+            }
+        }
+
+        h4{
+            font-size: 20px;
+
+            @media (max-width:725px) {
+                font-size: 14px;
+            }
+        }
+
+        button{
+            font-size: 20px;
+            color: white;
+            background-color: #68B738;
+            padding: 14px 26px;
+            text-transform: uppercase;
+            border: none;
+
+            @media (max-width:725px) {
+                display: none;
+            }
+        }
+
+        .btn{
+            font-size: 20px;
+            color: white;
+            background-color: #68B738;
+            padding: 14px 100px;
+            text-transform: uppercase;
+            border: none;
+            display: none;
+        
+            @media (max-width:725px) {
+                display: block;
+            }
+
+            @media (max-width:460px) {
+                padding: 14px 70px;
+            }
+        }
+        
+
+    }
+}
+
+
+.wrap2{
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 80px;
+    gap: 80px;
+    
+    @media (max-width:950px) {
+        flex-direction: column;
+        
+    }
+
+    .box1{
+        padding: 55px;
+        background-color: #f2f2f2;
+    }
+
+    h3{
+        font-size: 36px;
+
+        @media (max-width:420px) {
+            font-size: 24px;
+        }
+    }
+
+    h4{
+        font-size: 20px;
+    }
+
+    p{
+        font-size: 16px;
+    }
+
+    .catback{
+        display: flex;
+        align-items: center;
+        gap: 60px;
+    }
+
+    .arrow{
+        display: flex;
+        align-items: center;
+        gap: 40px;
+    }
+}
+
+.section2{
+    padding-bottom: 70px;
+
+    h1{
+        font-size: 60px;
+        @media (max-width:725px) {
+            text-align: center;
+        }
+    }
+
+    .wrap3{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 95px;
+
+        @media (max-width:780px) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        @media (max-width:725px) {
+            display: grid;
+            grid-template-columns: 1fr;
+            text-align: center;
+        }
+    
+        .box2{
+            background-image: url(./img/1.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: right;
+
+            @media (max-width:725px) {
+                background-image: none;
+            }
+        }
+
+        .box3{
+            background-image: url(./img/2.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: right;
+
+            @media (max-width:725px) {
+                background-image: none;
+            }
+        }
+
+        .box4{
+            background-image: url(./img/3.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: right;
+
+            @media (max-width:725px) {
+                background-image: none;
+            }
+        }
+
+        .box5{
+            background-image: url(./img/4.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: right;
+
+            @media (max-width:725px) {
+                background-image: none;
+            }
+        }
+    }
+}
